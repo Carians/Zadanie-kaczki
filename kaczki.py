@@ -43,7 +43,7 @@ def Main():
         x2 += szerokosci[i]
     #print('Wysokości: '+str(x), 'Szerokości: '+str(x2))
     #print(maksymalna_suma_wysokości(N, M, wysokosci, szerokosci))
-    print(optymalna_maksymalna_suma_wysokości_wykorzystanych_kaczuszek(M, wysokosci, szerokosci))
+    print(optymalna_maksymalna_suma(M, wysokosci, szerokosci))
 
 def polacz_kaczki(wysokosci, szerokosci):
     kaczki = []
@@ -52,7 +52,7 @@ def polacz_kaczki(wysokosci, szerokosci):
     return kaczki
 
 
-def optymalna_maksymalna_suma_wysokości_wykorzystanych_kaczuszek(M, wysokosci, szerokosci):
+def optymalna_maksymalna_suma(M, wysokosci, szerokosci):
     # Polaczenie wysokosci i szerokosci w jedna liste
     kaczki = polacz_kaczki(wysokosci, szerokosci)
     suma_wysokosci = 0
